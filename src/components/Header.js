@@ -16,6 +16,7 @@ const links = [
         href: "#blog"
     },
 ];
+
 // console.log(links[0].text)
 function Header() {
     const linksJsx = links.map((elem) => {
@@ -23,10 +24,10 @@ function Header() {
     })
 
     return (
-        <nav className="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+        <nav className="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black/75 fixed z-10 h-[80px]">
             <div className="flex justify-between">
             <a href="#" className="flex items-center p-2 mr-4 no-underline">
-                <img className="max-h-l3 w-auto" src="assets/images/logo.png" />
+                <img className="max-h-l3 w-auto" src="images/logo.png" />
             </a>
             <a
                 data-toggle="toggle-nav"
@@ -55,7 +56,7 @@ function Link({ href, text }) {
     return (
         <a
             href={href}
-            className="fs-s1 mx-3 py-3 text-warning no-underline hover-underline"
+            className="fs-s1 mx-3 py-3 text-violet-500 no-underline hover-underline"
         >
             {text}
         </a>
