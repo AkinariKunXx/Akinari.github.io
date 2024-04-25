@@ -1,13 +1,28 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Card from "../components/Card";
 import "../css/Home.css";
 import "../css/footer.css";
 
+const cards=[
+    {
+        src: "images/pc8.jpg",
+        title: "123",
+    },
+    {
+        src: "images/pc9.jpg",
+        title: "123",
+    },
+    {
+        src: "images/pc5.webp",
+        title: "123",
+    }
+];
+
 function MainPage() {
+
+    let cardsjsx = cards.map((card, key) => <Card card={card} key={key} />);
+
     return (
         <>
-            <Header />
-
             {/* hero section */}
 
             <section id="home" className="min-h-100vh flex justify-start items-center relative before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:-z-10 before:bg-black/50">
@@ -88,40 +103,8 @@ function MainPage() {
             {/* pictures pc */}
 
             <section className="p-0 md-p-5">
-                <div className="flex flex-wrap">
-                    <div className="w-100pc md-w-33pc p-10">
-                        <a href="#" className="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
-                            <img className="w-100pc" src="images\pc1.webp" alt="" />
-                            <p className="fw-600 white fs-m3 mt-3">
-                                Кринге
-                            </p>
-                            <div className="indigo fs-s3 italic after-arrow-right my-4">
-                                Подробнее
-                            </div>
-                        </a>
-                    </div>
-                    <div className="w-100pc md-w-30pc p-10">
-                        <a href="#" className="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
-                            <img className="w-100pc" src="images\pc2.jpeg" alt="" />
-                            <p className="fw-600 white fs-m3 mt-3">
-                                Кринге
-                            </p>
-                            <div className="indigo fs-s3 italic after-arrow-right my-4">
-                                Подробнее
-                            </div>
-                        </a>
-                    </div>
-                    <div className="w-100pc md-w-30pc p-10">
-                        <a href="#" className="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
-                            <img className="w-100pc" src="images/pc3.jpeg" alt="" />
-                            <p className="fw-600 white fs-m3 mt-3">
-                                Кринге
-                            </p>
-                            <div className="indigo fs-s3 italic after-arrow-right my-4">
-                                Подробнее
-                            </div>
-                        </a>
-                    </div>
+                <div className="grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1">
+                    {cardsjsx}
                 </div>
             </section>
 
@@ -261,8 +244,6 @@ function MainPage() {
                     </div>
                 </div>
             </section>
-
-            <Footer />
         </>
     )
 }

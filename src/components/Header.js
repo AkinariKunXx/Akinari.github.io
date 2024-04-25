@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 const links = [
     {
         text: "Главная",
-        href: "#home"
+        href: "/"
     },
     {
         text: "Функции",
@@ -20,7 +22,7 @@ const links = [
 // console.log(links[0].text)
 function Header() {
     const linksJsx = links.map((elem) => {
-        return <Link text={elem.text} href={elem.href} />
+        return <HeaderLink text={elem.text} href={elem.href} />
     })
 
     return (
@@ -52,14 +54,14 @@ function Header() {
     );
 }
 
-function Link({ href, text }) {
+function HeaderLink({ href, text }) {
     return (
-        <a
-            href={href}
+        <Link
+            to={href}
             className="fs-s1 mx-3 py-3 text-violet-500 no-underline hover-underline"
         >
             {text}
-        </a>
+        </Link>
     );
 }
 
