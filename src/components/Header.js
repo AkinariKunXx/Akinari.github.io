@@ -8,8 +8,8 @@ const links = [
         href: "#features"
     },
     {
-        text: "Цены",
-        href: "#pricing"
+        text: "Каталог",
+        href: "/catalog"
     },
     {
         text: "О нас",
