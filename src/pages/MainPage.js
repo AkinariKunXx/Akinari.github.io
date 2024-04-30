@@ -25,19 +25,16 @@ function MainPage() {
         <>
             {/* hero section */}
 
-            <section id="home" className="min-h-100vh flex justify-start items-center relative before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:-z-10 before:bg-black/50">
+            <section id="home" className="min-h-100vh flex justify-start items-center relative before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:-z-10 before:bg-black/70">
                 <img src="images/pc14.jpg" className="absolute w-full h-full object-cover -z-20 top-0" />
                 <div className="mx-5 md-mx-l5">
-                    <div className="inline-block br-round bg-indigo-30 indigo-lightest p-2 fs-s2 mb-5">
-                        <div className="inline-block bg-indigo indigo-lightest br-round px-3 py-1 mr-3 fs-s3">
-                            Join Meet Up
-                        </div>
-                    We are coming to Singapore. Learn more…
+                    <div className="text-2xl inline-block br-round bg-indigo-30 white p-3 fw-800">
+                        Игровые компьютеры
                     </div>
                     <div>
-                        <h1 className="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">
-                            Ass <br />
-                            Website Fast
+                        <h1 className="white lh-3 text-lg fw-500 p-3">
+                            Мощные игровые компьютеры на процессорах от Intel и AMD последнего поколения <br/>
+                            с видеокартами серии GTX и RTX, превосходная производительность для любых игр.
                         </h1>
                         <div className="br-8 mt-10 inline-flex"></div>
                     </div>
@@ -55,8 +52,8 @@ function MainPage() {
                             </div>
                             <h4 className="white fw-600 fs-m3 mb-5">Процессоры</h4>
                             <div className="indigo-lightest fw-600 fs-m1 lh-3 opacity-50">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Мы устанавливаем проверенные процессоры,
+                                которые обеспечивают высокую производительность и надежность.
                             </div>
                             <a href="#"
                                 className="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">
@@ -71,8 +68,8 @@ function MainPage() {
                             </div>
                             <h4 className="white fw-600 fs-m3 mb-5">Видеокарты</h4>
                             <div className="indigo-lightest fw-600 fs-m1 opacity-50">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Мы выбираем только качественные видеокары,
+                                мы гарантируем клиентам стабильную работу и качественный графический опыт.
                             </div>
                             <a href="#"
                                 className="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">
@@ -87,8 +84,8 @@ function MainPage() {
                             </div>
                             <h4 className="white fw-600 fs-m3 mb-5">Материнские платы</h4>
                             <div className="indigo-lightest fw-600 fs-m1 opacity-50">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Мы также используем проверенные оперативные модули
+                                для обеспечения быстрой и стабильной работы системы.
                             </div>
                             <a href="#"
                                 className="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">

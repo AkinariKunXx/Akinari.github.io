@@ -26,7 +26,7 @@ function Header() {
     })
 
     return (
-        <nav className="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black/75 fixed z-10 h-[80px]">
+        <nav className="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black/50 fixed z-10 h-[80px]">
             <div className="flex justify-between">
             <a href="#" className="flex items-center p-2 mr-4 no-underline">
                 <img className="max-h-l3 w-auto" src="images/logo.png" />
