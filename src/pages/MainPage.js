@@ -1,26 +1,7 @@
-import Card from "../components/Card";
 import "../css/Home.css";
 import "../css/footer.css";
 
-const cards=[
-    {
-        src: "images/pc8.jpg",
-        title: "123",
-    },
-    {
-        src: "images/pc9.jpg",
-        title: "123",
-    },
-    {
-        src: "images/pc5.webp",
-        title: "123",
-    }
-];
-
 function MainPage() {
-
-    let cardsjsx = cards.map((card, key) => <Card card={card} key={key} />);
-
     return (
         <>
             {/* hero section */}
@@ -28,7 +9,7 @@ function MainPage() {
             <section id="home" className="min-h-100vh flex justify-start items-center relative before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:-z-10 before:bg-black/70">
                 <img src="images/pc14.jpg" className="absolute w-full h-full object-cover -z-20 top-0" />
                 <div className="mx-5 md-mx-l5">
-                    <div className="text-2xl inline-block br-round bg-indigo-30 white p-3 fw-800">
+                    <div className="font-defaultFont text-4xl inline-block br-round bg-indigo-30 white p-3">
                         Игровые компьютеры
                     </div>
                     <div>
@@ -73,7 +54,7 @@ function MainPage() {
                             </div>
                             <a href="#"
                                 className="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">
-                                Подробнее
+                                Подробне
                             </a>
                         </div>
                     </div>
@@ -98,12 +79,8 @@ function MainPage() {
             </section>
 
             {/* pictures pc */}
-
-            <section className="p-0 md-p-5">
-                <div className="grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1">
-                    {cardsjsx}
-                </div>
-            </section>
+            
+            
 
             {/* slider */}
 

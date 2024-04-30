@@ -5,6 +5,9 @@ module.exports = withMT({
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      defaultFont: ['MorningBreeze'],
+    },
     screens:{
       'mobile': '375px',
       // => @media (min-width: 375px) { ... }

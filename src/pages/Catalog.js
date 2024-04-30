@@ -72,7 +72,7 @@ function Catalog() {
                 <img src="images/pc_battlestations-4.jpg" className="absolute w-full h-full object-cover -z-20 top-0" />
                 <div className="mx-5 md-mx-l5">
                     <div>
-                        <p className="text-4xl inline-block br-round bg-indigo-30 white p-3 fw-800">
+                        <p className="font-defaultFont text-4xl inline-block br-round bg-indigo-30 white p-3">
                             Наши сборки
                         </p>
                     </div>
