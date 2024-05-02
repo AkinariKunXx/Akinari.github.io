@@ -1,5 +1,6 @@
 import "../css/Home.css";
 import "../css/footer.css";
+import CarouselCustomNavigation from "../components/Carousel";
 
 function MainPage() {
     return (
@@ -80,14 +81,16 @@ function MainPage() {
 
             {/* pictures pc */}
             
-            
+            <section className="">
+                <CarouselCustomNavigation />
+            </section>
 
             {/* slider */}
 
             <section className="relative bg-indigo-lightest-10">
                 <div id="slider-1">
                     <div className="p-10 md-p-110 flex justify-center items-center flex-column text-center">
-                        <img className="w-80pc" src="images/pc13.jpg" />
+                        <img className="w-50pc" src="images/pc13.jpg" />
                         <h2 className="white fs-l3 fw-900">
                             Lorem ipsum dolor sit amet, consectetur
                         </h2>
