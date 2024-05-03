@@ -1,6 +1,25 @@
 import "../css/Home.css";
 import "../css/footer.css";
-import CarouselCustomNavigation from "../components/Carousel";
+import PricingCard from "../components/CardPrice.js";
+
+const pricingCards = [
+    {
+        title: "standart",
+        src: "images/pccatalog.jpg",
+        adv: [
+            '123',
+            '123',
+        ],
+    },
+    {
+        title: "standart",
+        src: "images/pccatalog.jpg",
+        adv: [
+            '123',
+            '123',
+        ],
+    },
+];
 
 function MainPage() {
     return (
@@ -81,8 +100,8 @@ function MainPage() {
 
             {/* pictures pc */}
             
-            <section className="">
-                <CarouselCustomNavigation />
+            <section className="p-10 md-p-l5">
+                {pricingCards.map((elem, i) => <PricingCard card={elem} key={i} />)}
             </section>
 
             {/* slider */}
