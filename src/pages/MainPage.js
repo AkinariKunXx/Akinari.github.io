@@ -1,5 +1,37 @@
 import "../css/Home.css";
 import "../css/footer.css";
+import PricingCard from "../components/CardPrice.js";
+
+const pricingCards = [
+    {
+        title: "NEOFIT",
+        src: "images/pccatalog.jpg",
+        adv: [
+            'Neofit - Ваш удачный старт в мире компьютерных игр! Компьютеры начального уровня для тех кто отдаёт предпочтение онлайн играм.',
+        ],
+    },
+    {
+        title: "TROOPER",
+        src: "images/pccatalog.jpg",
+        adv: [
+            'Trooper- Высокая производительность в играх FHD и отменное качество компонентов. Процессоры с индексом F обладают прекрасным соотношением цена-производительность!',
+        ],
+    },
+    {
+        title: "ELITE ULTIMATE",
+        src: "images/pccatalog.jpg",
+        adv: [
+            'ELITE ULTIMATE - Ультимативная производительность в играх 4K и рабочих задачах. Экстремальная вычислительная мощность открывает возможности для решения любых задач.',
+        ],
+    },
+    {
+        title: "ELITE CUSTOM",
+        src: "images/pccatalog.jpg",
+        adv: [
+            'ELITE CUSTOM - это идеальный выбор для тех, кто хочет иметь уникальный компьютер. Благодаря футуристичным корпусам с нестандартным дизайном и широкому модельному ряду, вы сможете подобрать идеальное решение для любых задач.',
+        ],
+    },
+];
 
 function MainPage() {
     return (
@@ -80,75 +112,8 @@ function MainPage() {
 
             {/* pictures pc */}
             
-            
-
-            {/* slider */}
-
-            <section className="relative bg-indigo-lightest-10">
-                <div id="slider-1">
-                    <div className="p-10 md-p-110 flex justify-center items-center flex-column text-center">
-                        <img className="w-80pc" src="images/pc13.jpg" />
-                        <h2 className="white fs-l3 fw-900">
-                            Lorem ipsum dolor sit amet, consectetur
-                        </h2>
-                        <p className="indigo-lightest fw-600 fs-m1 opacity-30 my-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor{" "}
-                        </p>
-                        <a href="#" className="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">
-                            BUY NOW
-                        </a>
-                    </div>
-                </div>
-                <ul className="absolute list-none w-100pc flex justify-between top-50pc"></ul>
-            </section>
-
-            {/* big text */}
-
-            <section className="p-10 md-py-10">
-                <div className="w-100pc md-w-70pc mx-auto py-10">
-                    <h2 className="white fs-l2 md-fs-xl1 fw-900 lh-2">
-                        Торопитесь, скидка{" "}
-                        <span className="border-b bc-indigo bw-4"> 15%</span> до конца месяца!{" "}
-                    </h2>
-                </div>
-            </section>
-
-            {/* pricing */}
-
-            <section id="pricing">
-                <div className="p-10 flex flex-wrap">
-                    <div className="w-100pc md-w-50pc">
-                        <div className="p-5">
-                        </div>
-                    </div>
-                    <div className="w-100pc md-w-25pc">
-                        <div className="m-3 p-5 br-8 bg-indigo-lightest-10 overflow-hidden">
-                            <div className="p-3">
-                            </div>
-                            <div className="p-3 indigo-lightest fw-400 fs-s1 lh-5">
-                            </div>
-                            <div className="p-3">
-                                <button className="button full bg-black white  hover-opacity-100 hover-scale-up-1 ease-300">
-                                    aaa
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-100pc md-w-25pc">
-                        <div className="m-3 p-5 br-8 bg-white overflow-hidden">
-                            <div className="p-3">
-                            </div>
-                            <div className="p-3 black fw-400 fs-s1 lh-5">
-                            </div>
-                            <div className="p-3">
-                                <button className="button full bg-indigo white hover-opacity-100 hover-scale-up-1 ease-300">
-                                    aaa
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <section className="grid-cols-1 grid md:grid-cols-2 xl:grid-cols-4 gap-4 p-10 md-p-l5 justify-items-center">
+                {pricingCards.map((elem, i) => <PricingCard card={elem} key={i} />)}
             </section>
 
             {/* testimonials */}

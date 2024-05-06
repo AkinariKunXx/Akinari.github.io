@@ -21,8 +21,8 @@ const links = [
 
 // console.log(links[0].text)
 function Header() {
-    const linksJsx = links.map((elem) => {
-        return <HeaderLink text={elem.text} href={elem.href} />
+    const linksJsx = links.map((elem, i) => {
+        return <HeaderLink key={i} text={elem.text} href={elem.href} />
     })
 
     return (
