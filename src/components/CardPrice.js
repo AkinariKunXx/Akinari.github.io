@@ -2,7 +2,6 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Typography,
   Button,
 } from "@material-tailwind/react";
@@ -33,9 +32,9 @@ import {
           <Typography
             variant="h1"
             color="white"
-            className="mt-6 flex justify-center gap-1 text-7xl font-normal"
+            className="mt-6 flex justify-bottom gap-1 text-7xl font-normal"
           >
-            <img className="w-100pc" src={card.src} />
+            <img className="h-[20rem] object-bottom w-100pc" src={card.src} />
           </Typography>
         </CardHeader>
         <CardBody className="flex flex-col justify-between h-100 mt-12 p-0">
@@ -49,7 +48,7 @@ import {
             ripple={false}
             fullWidth={true}
           >
-            Buy Now
+            Приобрести
           </Button>
         </CardBody>    
       </Card>

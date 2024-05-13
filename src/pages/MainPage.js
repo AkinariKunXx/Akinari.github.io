@@ -1,32 +1,34 @@
 import "../css/Home.css";
 import "../css/footer.css";
 import PricingCard from "../components/CardPrice.js";
+import AccordionCustomAnimation from "../components/Accordion.js";
+import InfiniteCarousel from "../components/InfiniteCarousel.js";
 
 const pricingCards = [
     {
         title: "NEOFIT",
-        src: "images/pccatalog.jpg",
+        src: "images/pc16.jpg",
         adv: [
             'Neofit - Ваш удачный старт в мире компьютерных игр! Компьютеры начального уровня для тех кто отдаёт предпочтение онлайн играм.',
         ],
     },
     {
         title: "TROOPER",
-        src: "images/pccatalog.jpg",
+        src: "images/pc2.jpeg",
         adv: [
             'Trooper- Высокая производительность в играх FHD и отменное качество компонентов. Процессоры с индексом F обладают прекрасным соотношением цена-производительность!',
         ],
     },
     {
         title: "ELITE ULTIMATE",
-        src: "images/pccatalog.jpg",
+        src: "images/pc11.jpg",
         adv: [
             'ELITE ULTIMATE - Ультимативная производительность в играх 4K и рабочих задачах. Экстремальная вычислительная мощность открывает возможности для решения любых задач.',
         ],
     },
     {
         title: "ELITE CUSTOM",
-        src: "images/pccatalog.jpg",
+        src: "images/pc6.webp",
         adv: [
             'ELITE CUSTOM - это идеальный выбор для тех, кто хочет иметь уникальный компьютер. Благодаря футуристичным корпусам с нестандартным дизайном и широкому модельному ряду, вы сможете подобрать идеальное решение для любых задач.',
         ],
@@ -82,7 +84,7 @@ function MainPage() {
                             <h4 className="white fw-600 fs-m3 mb-5">Видеокарты</h4>
                             <div className="indigo-lightest fw-600 fs-m1 opacity-50">
                                 Мы выбираем только качественные видеокары,
-                                мы гарантируем клиентам стабильную работу и качественный графический опыт.
+                                мы гарантируем стабильную работу и качественный графический опыт.
                             </div>
                             <a href="#"
                                 className="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">
@@ -116,39 +118,49 @@ function MainPage() {
                 {pricingCards.map((elem, i) => <PricingCard card={elem} key={i} />)}
             </section>
 
-            {/* testimonials */}
+            {/* carousel */}
 
-            <section className="p-10 md-p-l5">
-                <div id="slider-2">
-                    <div className="px-3">
-                        <div className="p-8 br-8 bg-indigo-lightest-10 relative">
-                            <span className="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">
-                                ❝
-                            </span>
-                            <p className="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor{" "}
-                            </p>
-                            <div className="flex items-center my-5">
-                                <div className="block br-round border bc-black bw-4 w-l3 h-l3">
-                                    <img className="br-round" src="https://randomuser.me/api/portraits/men/46.jpg" alt="" />
-                                </div>
-                                <div className="ml-4 fs-s1">
-                                    <div className="indigo-lightest">Mahnaz Farzin</div>
-                                    <div className="indigo-lightest opacity-20">
-                                        Product Manager, XYZ
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <section className="white br-8 bg-indigo-lightest-10 p-5 md:p-10 ">
+                <div className='py-6 md:py-10'>
+                        <div className='mt-4 md:mt-8 flex flex-col flex-wrap gap-5 md:flex-row md:justify-center xl:justify-between mb-8 md:mb-16'>  
+                            <InfiniteCarousel/>
                     </div>
                 </div>
             </section>
 
-            {/* featured blog */}
-            
-            <section className="p-10 md-p-l10">
-                <div className="md-w-75pc">
+            {/* paralax */}
+
+            <section className="justify-start items-center relative before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:-z-10 before:bg-black/70">
+            <img src="images/pc12.jpg" className="absolute w-full h-full object-cover -z-20 top-0" />
+                <div className="py-[200px] bg-paralax bg-cover bg-center desktop:bg-top flex justify-center items-center">
+                    <div className='page'>
+                        <div className='flex flex-col gap-y-6 tablet:flex-row tablet:gap-x-6 tablet:justify-between'>
+                            <div className="flex flex-col ">
+                                <div className='text-white text-[16px] tablet:text-[18px] desktop:text-[22px] self-center'>245</div>
+                                <div className='h-px w-14 bg-textOverline self-center'></div>
+                                <div className='text-center text-white text-[18px] tablet:text-[17px] desktop:text-[22px] self-center'>Ежемесячные продажи</div>
+                            </div>
+                            <div className="flex flex-col">
+                                <div className='text-white text-[16px] tablet:text-[18px] self-center desktop:text-[22px]'>1543</div>
+                                <div className='h-px w-14 bg-textOverline self-center'></div>
+                                <div className='text-center text-white text-[18px] tablet:text-[17px] self-center desktop:text-[22px]'>Довольных клиентов</div>
+                            </div>
+                            <div className="flex flex-col">
+                                <div className='text-white text-[16px] tablet:text-[18px] self-center desktop:text-[22px]'>57</div>
+                                <div className='h-px w-14 bg-textOverline self-center'></div>
+                                <div className='text-center text-white text-[18px] tablet:text-[17px] self-center desktop:text-[22px]'>Работников в команде</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+
+            {/* accordion */}
+
+            <section className="p-10 md-p-l5">
+                <div className='br-8 bg-indigo-lightest-10 p-5 md-p-l5 flex-wrap md-justify-between md-items-center'>
+                    <h2 className='text-mobileTitle md:text-tabletTitle xl:text-desktopTitle mb-4 md:mb-8 text-center md:text-left white'>Преимущества</h2>
+                    <AccordionCustomAnimation/>
                 </div>
             </section>
 
@@ -180,6 +192,3 @@ function MainPage() {
 
 export default MainPage;
 
-<button type="button" className="button full bg-indigo white hover-opacity-100 hover-scale-up-1 ease-300 mobile:p-6">
-                                                    Перезвоните мне
-                                            </button>

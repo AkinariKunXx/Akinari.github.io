@@ -22,8 +22,16 @@ module.exports = withMT({
           200: "#b39ddb"
         },
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 15s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }
     },
-  
   },
   plugins: [],
 });

@@ -11,6 +11,8 @@ import {
 import Catalog from "./pages/Catalog";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import AboutUs from "./pages/AboutUs.js";
+import Shares from "./pages/Shares.js";
 
 const router = createBrowserRouter([
   {
@@ -22,8 +24,16 @@ const router = createBrowserRouter([
         element: <MainPage />,
       },
       {
+        path: "/shares",
+        element: <Shares />,
+      },
+      {
         path: "/catalog",
         element: <Catalog />,
+      },
+      {
+        path: "/aboutus",
+        element: <AboutUs />,
       },
     ],
   },

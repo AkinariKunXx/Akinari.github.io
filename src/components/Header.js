@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Form from "../components/Form.js";
 
 const links = [
     {
@@ -6,16 +7,16 @@ const links = [
         href: "/"
     },
     {
-        text: "Функции",
-        href: "#features"
+        text: "Акции",
+        href: "/shares"
     },
     {
-        text: "Каталог",
+        text: "Галерея",
         href: "/catalog"
     },
     {
         text: "О нас",
-        href: "#blog"
+        href: "/aboutus"
     },
 ];
 
@@ -35,20 +36,15 @@ function Header() {
                 data-toggle="toggle-nav"
                 data-target="#nav-items"
                 href="#"
-                className="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3"
-            >
+                className="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
                 <i data-feather="menu" />
             </a>
             </div>
             <div
             id="nav-items"
-            className="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center"
-            >
+            className="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
                 {linksJsx}
-
-                <a href="#" className="button bg-white black fw-600 no-underline mx-5">
-                    Регистрация
-                </a>
+                <Form />
             </div>
         </nav>
     );
@@ -58,7 +54,7 @@ function HeaderLink({ href, text }) {
     return (
         <Link
             to={href}
-            className="fs-s1 mx-3 py-3 text-violet-500 no-underline hover-underline"
+            className="no-underline fs-s1 mx-3 py-3 hover:text-white"
         >
             {text}
         </Link>
