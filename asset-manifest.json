@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.66886001.css",
+    "main.js": "/static/js/main.3ebe0218.js",
+    "static/js/453.9c610f29.chunk.js": "/static/js/453.9c610f29.chunk.js",
+    "static/media/MorningBreeze-Italic.otf": "/static/media/MorningBreeze-Italic.22346216afda0a936db3.otf",
+    "static/media/u.webp": "/static/media/u.c424c12b498b5a30a497.webp",
+    "static/media/pc16.jpg": "/static/media/pc16.4347da3210ca97c40ab3.jpg",
+    "static/media/check.svg": "/static/media/check.0739ad4191b669b75abf778e5987aa95.svg",
+    "index.html": "/index.html",
+    "main.66886001.css.map": "/static/css/main.66886001.css.map",
+    "main.3ebe0218.js.map": "/static/js/main.3ebe0218.js.map",
+    "453.9c610f29.chunk.js.map": "/static/js/453.9c610f29.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66886001.css",
+    "static/js/main.3ebe0218.js"
+  ]
+}
