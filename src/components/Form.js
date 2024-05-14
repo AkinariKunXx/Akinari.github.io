@@ -41,12 +41,10 @@ export default function Form() {
                 Ваш пароль
             </Typography>
             <Input label="Password" size="lg" />
-            <div className="-ml-2.5 -mt-3">
-              <Checkbox label="Remember Me" />
-            </div>
+          
           </CardBody>
           <CardFooter className="pt-0">
-            <Button variant="gradient" onClick={handleOpen} fullWidth>
+          <Button variant="" className="bg-purple" onClick={handleOpen} fullWidth>
                 Войти
             </Button>
             <Typography variant="small" className="mt-4 flex justify-center">

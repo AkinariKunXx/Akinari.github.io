@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Modal from "../pages/Modal";
 
 export default function Footer() {
@@ -12,13 +13,13 @@ export default function Footer() {
                                 <h2 className="white mb-[25px]">Контакты</h2>
                                 <div className="">
                                     <div className="">
-                                        <div className="desktop:mb-[5px]">
+                                        <div className="desktop:mb-[1rem]">
                                             <a href="tel:+74957252525">+7(495)7252525</a>
                                         </div>
-                                        <div className="desktop:mb-[5px]">
+                                        <div className="desktop:mb-[1rem]">
                                             ул. Тверская, 17, офис 738
                                         </div>
-                                        <div className="desktop:mb-[5px]">
+                                        <div className="desktop:mb-[1rem]">
                                             mail@mail.ru
                                         </div>
                                     </div>
@@ -31,13 +32,16 @@ export default function Footer() {
                                 <div className="">
                                     <div className="">
                                         <div className="desktop:mb-[5px]">
-                                            <button>Главнвая</button>
+                                            <Link className="white opacity-60" to="/">Главнвая</Link>
                                         </div>
                                         <div className="desktop:mb-[5px]">
-                                            <button>О нас</button>
+                                            <Link className="white opacity-60" to="/shares">Акции</Link>
                                         </div>
                                         <div className="desktop:mb-[5px]">
-                                            <button>Цены</button>
+                                            <Link className="white opacity-60" to="/catalog">Галерея</Link>
+                                        </div>
+                                        <div className="desktop:mb-[2rem]">
+                                            <Link className="white opacity-60" to="/aboutus">О нас</Link>
                                         </div>
                                         <div className="mobile:w-[150px]">
                                             <div className="button full bg-indigo white hover-opacity-100 hover-scale-up-1 ease-300 mobile:p-6">
@@ -96,7 +100,9 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="desktop:md-w-25pc desktop:mb-20">
+                        <a href="#">
                         <img src="images/logo.png" className="mb-[20px] w-11" alt="" />
+                        </a>
                         <div className="white opacity-60 fs-s2 md-pr-10 desktop:mt-[25px]">
                             © 2010-2024 PULSTECH. Все права защищены.
                             <div>
