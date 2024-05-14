@@ -17,20 +17,21 @@ function Shares() {
 
             {/*   */}
 
-            <section className="p-1 md-p-5 height-[30px] grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1 "> 
+            <section className="p-1 md-p-5 grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1 "> 
+                <div className="rounded-xl bg-[url('/public/images/pc16.jpg')] flex before:content-[''] relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-black/25">
+                    <div className="h-[50rem] grid content-end p-5">
+                        <div className="white mb-[1rem] font-defaultFont text-xl">1 Марта 2024</div>
+                        <div className="white font-defaultFont font-[900] text-2xl">Скидка 5% при покупке ПК за наличный расчет!</div>
+                    </div>
+                </div>
                 <div className="flex w-100pc p-3">
                     <a className="block no-underline p-4 br-8 ease-400 flex justify-center items-centr flex-col">
-                        <img className="h-[55rem] rounded-lg object-cover" src="images/pc13.jpg" alt="" />
+                        
                     </a>
                 </div>
                 <div className="flex w-100pc p-3">
                     <a className="block no-underline p-4 br-8 ease-400 flex justify-center items-centr flex-col">
-                        <img className="h-[55rem] rounded-lg object-cover" src="images/Screenshot_1.png" alt="" />
-                    </a>
-                </div>
-                <div className="flex w-100pc p-3">
-                    <a className="block no-underline p-4 br-8 ease-400 flex justify-center items-centr flex-col">
-                        <img className="h-[55rem] rounded-lg object-cover" src="images/pc13.jpg" alt="" />
+                        
                     </a>
                 </div>
             </section>
